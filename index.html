@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Music Player </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts/font-icon/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts/custom-font-aparat/css/fontello.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+</head>
+
+<body>
+   
+    <div class="bg" id="bg">
+        <div class="backlayer" id="backlayer"></div>
+        <img src="poster1.jpg" alt="poster1">
+    </div>
+    <div class="main" id="main">
+        <div class="image" id="image">
+            <img src="poster1.jpg" alt="poster1">
+        </div>
+        <div class="player" id="player">
+            <div class="songTitle" id="songTitle">Music Player</div>
+
+            <div class="buttons" id="buttons">
+                <button id="volume_down" onclick="setHalfVolume()"><img src="./images/handle/volume_down.png" alt="pre btn" height="90%" width="90%"></button>
+                <button id="pre" onclick="pre()"><img src="./images/handle/pre.png" alt="pre btn" height="90%" width="90%"></button>
+                <button id="play" onclick="playOrPauseSong()"><img src="./images/handle/play.png" alt="play btn"></button>
+                <button id="next" onclick="next()"><img src="./images/handle/next.png" alt="next btn" height="90%" width="90%"></button>
+                <button id="volume_up" onclick="setFullVolume()"><img src="./images/handle/volume_up.png" alt="pre btn" height="90%" width="90%"></button>
+            </div>
+            <div id="seek-bar" onclick="setProgress(e)">
+                <div id="fill"></div>
+                <div id="handle"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/query-3.4.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
